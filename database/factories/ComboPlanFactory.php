@@ -18,7 +18,7 @@ class ComboPlanFactory extends Factory
     {
         return [
             //
-            'name'  => $this->faker->unique()->word(). ' Combo Plan ',
+            'name'  => $this->faker->word(). ' Combo Plan '.uniqid(),
             'price' => $this->faker->randomFloat(2, 100, 99999),
         ];
     }

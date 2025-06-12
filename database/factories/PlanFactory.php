@@ -18,7 +18,7 @@ class PlanFactory extends Factory
     {
         return [
             //
-            'name'  => $this->faker->unique()->word(). ' Plan ',
+            'name'  => $this->faker->word(). ' Plan '.uniqid(),
             'price' => $this->faker->randomFloat(2, 100, 99999),
         ];
     }

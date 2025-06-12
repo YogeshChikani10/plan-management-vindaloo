@@ -10,6 +10,12 @@
 </head>
 <body>
     <div class="container mt-5">
+        <div class="mb-4 text-center">
+            <a href="{{url('/plan')}}" class="btn btn-primary mx-1">Plan</a>
+            <a href="{{url('/combo-plan')}}" class="btn btn-success mx-1">Combo Plan</a>
+            <a href="{{url('/criteria')}}" class="btn btn-danger mx-1">Criteria</a>
+
+        </div>
         @yield('content')
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

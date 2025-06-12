@@ -24,12 +24,12 @@ class EligibilityCriteriaFactory extends Factory
 
         return [
             //
-            'name'                => $this->faker->unique()->word(). ' Criteria ',
+            'name'                => $this->faker->word(). ' Criteria '.uniqid(),
             'age_less_than'       => $ageLessThan,
             'age_greater_than'    => $ageGreaterThan,
             'last_login_days_ago' => $this->faker->numberBetween(1, 365),
             'income_less_than'    => $incomeLessThan,
-            'income_greater_than' => $incomeGreaterThan
+            'income_greater_than' => $incomeGreaterThan,
         ];
     }
 }
